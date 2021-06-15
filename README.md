@@ -6,7 +6,7 @@ CodeGlance
 #### 2、适配idea 2020.3版本
 
 
-Latest build: https://github.com/Vektah/CodeGlance/releases
+Latest build: https://github.com/ranbest/CodeGlance/releases
 
 InteliJ plugin that displays a zoomed out overview or minimap similar to the one found in Sublime into the editor pane. The minimap allows for quick scrolling letting you jump straight to sections of code.
 
