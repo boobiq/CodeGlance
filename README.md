@@ -1,7 +1,11 @@
-CodeGlance [![CircleCI](https://circleci.com/gh/Vektah/CodeGlance/tree/master.svg?style=svg)](https://circleci.com/gh/Vektah/CodeGlance/tree/master)
+CodeGlance
 ==========
+## 说明：
+#### 1、forked from vektah/CodeGlance (https://github.com/Vektah/CodeGlance) 自己研究学习使用
 
-Plugin Repository: http://plugins.jetbrains.com/plugin/7275  
+#### 2、适配idea 2020.3版本
+
+
 Latest build: https://github.com/Vektah/CodeGlance/releases
 
 InteliJ plugin that displays a zoomed out overview or minimap similar to the one found in Sublime into the editor pane. The minimap allows for quick scrolling letting you jump straight to sections of code.
