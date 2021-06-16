@@ -1,8 +1,8 @@
 <idea-plugin url="https://github.com/Vektah/CodeGlance">
-	<id>net.vektah.codeglance</id>
+	<id>cn.haojiyou.CodeGlance3</id>
 	<name>CodeGlance3</name>
-	<version>2.0</version>
-	<vendor email="adam@vektah.net" url="https://github.com/Vektah/CodeGlance">Vektah</vendor>
+	<version>2.0.1</version>
+	<vendor email="lixr873@163.com" url="https://github.com/ranbest/CodeGlance">ranbest</vendor>
 
 	<description>
 		Embeds a code minimap similar to the one found in Sublime into the editor pane. Works with both light and dark
