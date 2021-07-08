@@ -9,13 +9,14 @@ buildscript {
 }
 
 plugins {
+    id "java"
     id "org.jetbrains.intellij" version "0.6.5"
 }
 
 intellij {
-    version 'IC-2020.3'
+    version "${ideaVersion}"
 //        plugins 'coverage'
-//        pluginName 'CodeGlance'
+        pluginName 'CodeGlance3'
     updateSinceUntilBuild = false
 }
 
@@ -30,9 +31,9 @@ allprojects {
     apply plugin: 'org.jetbrains.intellij'
 
     intellij {
-        version 'IC-2020.3'
+        version "${ideaVersion}"
 //        plugins 'coverage'
-//        pluginName 'CodeGlance'
+        pluginName 'CodeGlance3'
         updateSinceUntilBuild = false
     }
 
