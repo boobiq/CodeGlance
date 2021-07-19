@@ -54,3 +54,9 @@ Show/Hide or Enable/Disable Minimap
 ===================
 * **Ctrl-Shift-G** to toggle minimap.
 * Settings > Other Settings > CodeGlance
+
+# 推荐插件
+我的另一个插件也挺有意思的。推荐给大家。
+中文字符替换插件
+https://gitee.com/bestxu/chinese-char-replace
+感兴趣的可以试试看
