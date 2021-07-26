@@ -44,7 +44,8 @@ class Minimap(private val config: Config) {
      *
      * @param editor        The editor being drawn
      */
-    fun update(editor: EditorEx, scrollstate: ScrollState, indicator: ProgressIndicator?) {
+    @Synchronized
+    fun  update(editor: EditorEx, scrollstate: ScrollState, indicator: ProgressIndicator?) {
         logger.debug("Updating file image.")
 
         if (img == null || img!!.height < scrollstate.documentHeight || img!!.width < config.width) {
@@ -150,6 +151,7 @@ class Minimap(private val config: Config) {
         }
     }
 
+    @Synchronized
     private fun renderClean(x: Int, y: Int, char: Int, color: FloatArray, buffer: FloatArray) {
         val weight = when (char) {
             in 0..32 -> 0.0f
@@ -183,6 +185,7 @@ class Minimap(private val config: Config) {
         }
     }
 
+    @Synchronized
     private fun renderAccurate(x: Int, y: Int, char: Int, color: FloatArray, buffer: FloatArray) {
         val topWeight = GetTopWeight(char)
         val bottomWeight = GetBottomWeight(char)

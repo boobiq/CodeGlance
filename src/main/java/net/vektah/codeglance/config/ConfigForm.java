@@ -61,10 +61,11 @@ public class ConfigForm {
             @Override
             public boolean verify(JComponent input) {
                 boolean valid = pattern.matcher(viewportColor.getText()).matches();
-                if (!valid)
+                if (!valid){
                     viewportColor.setBorder(invalidBorder);
-                else
+                } else{
                     viewportColor.setBorder(defaultBorder);
+                }
                 return valid;
             }
 
