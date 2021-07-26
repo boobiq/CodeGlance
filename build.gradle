@@ -64,3 +64,4 @@ runIde {
     jvmArgs '-DmyProperty=value'
 }
 
+tasks.buildSearchableOptions.enabled=false
