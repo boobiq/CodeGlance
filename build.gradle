@@ -20,7 +20,7 @@ intellij {
     version "IC-$ideaVersion"
 //        plugins 'coverage'
         pluginName 'CodeGlance3'
-    updateSinceUntilBuild = false
+    updateSinceUntilBuild = true
 }
 
 allprojects {
@@ -37,7 +37,7 @@ allprojects {
         version "IC-$ideaVersion"
 //        plugins 'coverage'
         pluginName 'CodeGlance3'
-        updateSinceUntilBuild = false
+        updateSinceUntilBuild = true
     }
 
     test {
@@ -68,5 +68,4 @@ runIde {
 }
 
 tasks.buildSearchableOptions.enabled=false
-
 
