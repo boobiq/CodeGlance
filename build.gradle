@@ -12,9 +12,12 @@ plugins {
     id "java"
     id "org.jetbrains.intellij" version "0.6.5"
 }
+group  'com.haojiyou'
+version "$version-$ideaVersion-$preVersion"
+
 
 intellij {
-    version "${ideaVersion}"
+    version "IC-$ideaVersion"
 //        plugins 'coverage'
         pluginName 'CodeGlance3'
     updateSinceUntilBuild = false
@@ -31,7 +34,7 @@ allprojects {
     apply plugin: 'org.jetbrains.intellij'
 
     intellij {
-        version "${ideaVersion}"
+        version "IC-$ideaVersion"
 //        plugins 'coverage'
         pluginName 'CodeGlance3'
         updateSinceUntilBuild = false
@@ -65,3 +68,5 @@ runIde {
 }
 
 tasks.buildSearchableOptions.enabled=false
+
+
