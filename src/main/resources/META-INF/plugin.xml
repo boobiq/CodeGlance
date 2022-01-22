@@ -135,6 +135,7 @@
 	<idea-version since-build="203.5981"/>
 
 	<depends>com.intellij.modules.lang</depends>
+	<depends>com.intellij.modules.database</depends>
 
 	<project-components>
 		<component><implementation-class>net.vektah.codeglance.CodeGlancePlugin</implementation-class></component>

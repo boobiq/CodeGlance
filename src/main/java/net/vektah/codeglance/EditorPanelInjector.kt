@@ -1,5 +1,10 @@
 package net.vektah.codeglance
 
+import com.intellij.database.datagrid.GridDataHookUpManager
+import com.intellij.database.editor.DatabaseTableFileEditor
+import com.intellij.database.run.ui.DataAccessType
+import com.intellij.database.run.ui.GridDataSupport
+import com.intellij.database.run.ui.grid.GridMainPanel
 import com.intellij.openapi.components.ServiceManager
 import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.fileEditor.*
@@ -49,12 +54,20 @@ class EditorPanelInjector(private val project: Project, private val runner: Task
             logger.debug("I01: Injection failed, only text editors are supported currently.")
             return null
         }
+        // if (editor !is DatabaseTableFileEditor) {
+        //         logger.debug("I01: Injection failed, only text editors are supported currently.")
+        //         return null
+        // }
 
         try {
             val outerPanel = editor.component as JPanel
             val outerLayout = outerPanel.layout as BorderLayout
             var layoutComponent = outerLayout.getLayoutComponent(BorderLayout.CENTER)
 
+            // if (layoutComponent is GridMainPanel) {
+            //     editor.dataGrid.getDataModel(DataAccessType.DATA_WITH_MUTATIONS)
+            // }
+            //
             if (layoutComponent is JBSplitter) {
                 // editor is inside firstComponent of a JBSplitter
                 val editorComp = layoutComponent.firstComponent as JPanel
